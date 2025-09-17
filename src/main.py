@@ -38,6 +38,11 @@ async def metrics() -> Response:
     return Response(content=generate_latest(), media_type="text/plain")
 
 
+@app.get("/health")
+async def health() -> dict:
+    return {"status": "healthy"}
+
+
 async def main() -> None:
     # For local running
     scheduler = Scheduler()
