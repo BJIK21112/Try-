@@ -43,6 +43,58 @@ async def health() -> dict:
     return {"status": "healthy"}
 
 
+@app.post("/trigger-promotion")
+async def trigger_promotion() -> dict:
+    """Manually trigger a community promotion post for testing"""
+    try:
+        from .engagement import EngagementBot
+
+        bot = EngagementBot()
+        success = bot.promote_community()
+        return {
+            "status": "success" if success else "failed",
+            "message": "Manual promotion triggered",
+        }
+    except Exception as e:
+        logger.error(f"Failed to trigger manual promotion: {e}")
+        return {"status": "error", "message": str(e)}
+
+
+@app.post("/test-post")
+async def test_post() -> dict:
+    """Post a simple test message to make the account visible"""
+    try:
+        from .twitter_client import TwitterClient
+        from .rate_limiter import RateLimiter
+        from .metrics import posts_counter, engagements_counter
+
+        client = TwitterClient()
+        limiter = RateLimiter()
+
+        if not limiter.can_request():
+            return {
+                "status": "rate_limited",
+                "message": "Rate limit exceeded, try again later",
+            }
+
+        test_message = "🐕 $wifDOG Community Bot is now active! Join the heavenly revolution! 🌟 #wifDOG #memecoin"
+        tweet_id = client.post_tweet(test_message)
+
+        if tweet_id:
+            posts_counter.inc()
+            engagements_counter.inc()
+            return {
+                "status": "success",
+                "message": f"Test post successful! Tweet ID: {tweet_id}",
+                "url": f"https://x.com/bishalkunw8/status/{tweet_id}",
+            }
+        else:
+            return {"status": "failed", "message": "Failed to post test message"}
+    except Exception as e:
+        logger.error(f"Failed to post test message: {e}")
+        return {"status": "error", "message": str(e)}
+
+
 async def main() -> None:
     # For local running
     scheduler = Scheduler()
