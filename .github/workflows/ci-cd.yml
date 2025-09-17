@@ -88,6 +88,7 @@ jobs:
             --platform managed \
             --region us-central1 \
             --allow-unauthenticated \
+            --remove-env-vars "Client_id,client_secret,Access_Token_Secret,Access_Token" \
             --service-account x-bot-secret-accessor@${{ secrets.GCP_PROJECT_ID }}.iam.gserviceaccount.com \
             --set-env-vars "GOOGLE_CLOUD_PROJECT=${{ secrets.GCP_PROJECT_ID }}" \
             --memory 1Gi \
