@@ -1,0 +1,193 @@
+2025-09-16 17:57:09.203 | INFO     | src.engagement:post_market_update:38 - Market update posted successfully
+2025-09-16 17:57:09.601 | WARNING  | src.engagement:post_market_update:23 - Rate limit exceeded for market update
+2025-09-16 17:57:09.610 | WARNING  | src.engagement:post_market_update:68 - No trending coins available
+2025-09-16 17:57:09.619 | WARNING  | src.engagement:post_market_update:59 - Could not fetch price for trending coin
+2025-09-16 17:57:09.631 | INFO     | src.engagement:engage_with_tweets:78 - Starting tweet engagement
+2025-09-16 17:57:09.631 | INFO     | src.engagement:engage_with_tweets:110 - Successfully engaged with tweet
+2025-09-16 17:57:09.631 | INFO     | src.engagement:engage_with_tweets:129 - Tweet engagement completed
+2025-09-16 17:57:09.641 | INFO     | src.engagement:engage_with_tweets:78 - Starting tweet engagement
+2025-09-16 17:57:09.642 | INFO     | src.engagement:engage_with_tweets:86 - Skipped spam tweet
+2025-09-16 17:57:09.642 | INFO     | src.engagement:engage_with_tweets:129 - Tweet engagement completed
+2025-09-16 17:57:09.651 | INFO     | src.engagement:promote_community:148 - Community promotion posted successfully
+2025-09-16 17:57:09.665 | INFO     | src.market_data:get_trending_coins:21 - Trending coins: ['bitcoin', 'ethereum', 'cardano']
+2025-09-16 17:57:09.672 | ERROR    | src.market_data:get_trending_coins:24 - Error fetching trending coins: API Error
+2025-09-16 17:57:09.892 | ERROR    | src.market_data:get_coin_price:40 - Error fetching price for bitcoin: API Error
+2025-09-16 17:58:26.245 | INFO     | src.engagement:post_market_update:38 - Market update posted successfully
+2025-09-16 17:58:26.251 | WARNING  | src.engagement:post_market_update:23 - Rate limit exceeded for market update
+2025-09-16 17:58:26.263 | WARNING  | src.engagement:post_market_update:68 - No trending coins available
+2025-09-16 17:58:26.270 | WARNING  | src.engagement:post_market_update:59 - Could not fetch price for trending coin
+2025-09-16 17:58:26.279 | INFO     | src.engagement:engage_with_tweets:78 - Starting tweet engagement
+2025-09-16 17:58:26.279 | INFO     | src.engagement:engage_with_tweets:110 - Successfully engaged with tweet
+2025-09-16 17:58:26.279 | INFO     | src.engagement:engage_with_tweets:129 - Tweet engagement completed
+2025-09-16 17:58:26.289 | INFO     | src.engagement:engage_with_tweets:78 - Starting tweet engagement
+2025-09-16 17:58:26.289 | INFO     | src.engagement:engage_with_tweets:86 - Skipped spam tweet
+2025-09-16 17:58:26.289 | INFO     | src.engagement:engage_with_tweets:129 - Tweet engagement completed
+2025-09-16 17:58:26.299 | INFO     | src.engagement:promote_community:148 - Community promotion posted successfully
+2025-09-16 17:58:26.314 | INFO     | src.market_data:get_trending_coins:21 - Trending coins: ['bitcoin', 'ethereum', 'cardano']
+2025-09-16 17:58:26.321 | ERROR    | src.market_data:get_trending_coins:24 - Error fetching trending coins: API Error
+2025-09-16 17:58:26.773 | ERROR    | src.market_data:get_coin_price:40 - Error fetching price for bitcoin: API Error
+2025-09-16 17:58:26.795 | INFO     | src.twitter_client:post_tweet:21 - Posted tweet: 1234567890
+2025-09-16 17:58:26.806 | ERROR    | src.twitter_client:post_tweet:24 - Error posting tweet: API Error
+2025-09-16 17:58:26.818 | INFO     | src.twitter_client:like_tweet:41 - Liked tweet: 1234567890
+2025-09-16 17:58:26.834 | INFO     | src.twitter_client:reply_to_tweet:32 - Replied to tweet 1234567890: 9876543210
+2025-09-16 17:59:36.361 | INFO     | src.engagement:post_market_update:38 - Market update posted successfully
+2025-09-16 17:59:36.370 | WARNING  | src.engagement:post_market_update:23 - Rate limit exceeded for market update
+2025-09-16 17:59:36.379 | WARNING  | src.engagement:post_market_update:68 - No trending coins available
+2025-09-16 17:59:36.387 | WARNING  | src.engagement:post_market_update:59 - Could not fetch price for trending coin
+2025-09-16 17:59:36.398 | INFO     | src.engagement:engage_with_tweets:78 - Starting tweet engagement
+2025-09-16 17:59:36.398 | INFO     | src.engagement:engage_with_tweets:110 - Successfully engaged with tweet
+2025-09-16 17:59:36.399 | INFO     | src.engagement:engage_with_tweets:129 - Tweet engagement completed
+2025-09-16 17:59:36.407 | INFO     | src.engagement:engage_with_tweets:78 - Starting tweet engagement
+2025-09-16 17:59:36.407 | INFO     | src.engagement:engage_with_tweets:86 - Skipped spam tweet
+2025-09-16 17:59:36.408 | INFO     | src.engagement:engage_with_tweets:129 - Tweet engagement completed
+2025-09-16 17:59:36.414 | INFO     | src.engagement:promote_community:148 - Community promotion posted successfully
+2025-09-16 17:59:36.427 | INFO     | src.market_data:get_trending_coins:21 - Trending coins: ['bitcoin', 'ethereum', 'cardano']
+2025-09-16 17:59:36.434 | ERROR    | src.market_data:get_trending_coins:24 - Error fetching trending coins: API Error
+2025-09-16 17:59:36.439 | INFO     | src.market_data:get_coin_price:37 - Price of bitcoin: None
+2025-09-16 17:59:36.792 | INFO     | src.market_data:get_coin_price:37 - Price of bitcoin: None
+2025-09-16 17:59:36.802 | ERROR    | src.market_data:get_coin_price:40 - Error fetching price for bitcoin: API Error
+2025-09-16 17:59:36.816 | INFO     | src.twitter_client:post_tweet:21 - Posted tweet: 1234567890
+2025-09-16 17:59:36.823 | ERROR    | src.twitter_client:post_tweet:24 - Error posting tweet: API Error
+2025-09-16 17:59:36.826 | INFO     | src.twitter_client:like_tweet:41 - Liked tweet: 1234567890
+2025-09-16 17:59:36.835 | INFO     | src.twitter_client:reply_to_tweet:32 - Replied to tweet 1234567890: 9876543210
+2025-09-16 18:00:11.433 | INFO     | src.market_data:get_coin_price:37 - Price of bitcoin: None
+2025-09-16 18:01:04.763 | INFO     | src.engagement:post_market_update:38 - Market update posted successfully
+2025-09-16 18:01:04.772 | WARNING  | src.engagement:post_market_update:23 - Rate limit exceeded for market update
+2025-09-16 18:01:04.780 | WARNING  | src.engagement:post_market_update:68 - No trending coins available
+2025-09-16 18:01:04.789 | WARNING  | src.engagement:post_market_update:59 - Could not fetch price for trending coin
+2025-09-16 18:01:04.800 | INFO     | src.engagement:engage_with_tweets:78 - Starting tweet engagement
+2025-09-16 18:01:04.800 | INFO     | src.engagement:engage_with_tweets:110 - Successfully engaged with tweet
+2025-09-16 18:01:04.800 | INFO     | src.engagement:engage_with_tweets:129 - Tweet engagement completed
+2025-09-16 18:01:04.808 | INFO     | src.engagement:engage_with_tweets:78 - Starting tweet engagement
+2025-09-16 18:01:04.809 | INFO     | src.engagement:engage_with_tweets:86 - Skipped spam tweet
+2025-09-16 18:01:04.809 | INFO     | src.engagement:engage_with_tweets:129 - Tweet engagement completed
+2025-09-16 18:01:04.818 | INFO     | src.engagement:promote_community:148 - Community promotion posted successfully
+2025-09-16 18:01:04.831 | INFO     | src.market_data:get_trending_coins:21 - Trending coins: ['bitcoin', 'ethereum', 'cardano']
+2025-09-16 18:01:04.834 | ERROR    | src.market_data:get_trending_coins:24 - Error fetching trending coins: API Error
+2025-09-16 18:01:04.844 | INFO     | src.market_data:get_coin_price:37 - Price of bitcoin: 45000.5
+2025-09-16 18:01:04.853 | INFO     | src.market_data:get_coin_price:37 - Price of bitcoin: 45000.5
+2025-09-16 18:01:04.859 | ERROR    | src.market_data:get_coin_price:40 - Error fetching price for bitcoin: API Error
+2025-09-16 18:01:04.873 | INFO     | src.twitter_client:post_tweet:21 - Posted tweet: 1234567890
+2025-09-16 18:01:04.880 | ERROR    | src.twitter_client:post_tweet:24 - Error posting tweet: API Error
+2025-09-16 18:01:04.889 | INFO     | src.twitter_client:like_tweet:41 - Liked tweet: 1234567890
+2025-09-16 18:01:04.897 | INFO     | src.twitter_client:reply_to_tweet:32 - Replied to tweet 1234567890: 9876543210
+2025-09-16 18:01:37.285 | INFO     | src.engagement:post_market_update:38 - Market update posted successfully
+2025-09-16 18:01:37.301 | WARNING  | src.engagement:post_market_update:23 - Rate limit exceeded for market update
+2025-09-16 18:01:37.310 | WARNING  | src.engagement:post_market_update:68 - No trending coins available
+2025-09-16 18:01:37.324 | WARNING  | src.engagement:post_market_update:59 - Could not fetch price for trending coin
+2025-09-16 18:01:37.337 | INFO     | src.engagement:engage_with_tweets:78 - Starting tweet engagement
+2025-09-16 18:01:37.337 | INFO     | src.engagement:engage_with_tweets:110 - Successfully engaged with tweet
+2025-09-16 18:01:37.337 | INFO     | src.engagement:engage_with_tweets:129 - Tweet engagement completed
+2025-09-16 18:01:37.347 | INFO     | src.engagement:engage_with_tweets:78 - Starting tweet engagement
+2025-09-16 18:01:37.347 | INFO     | src.engagement:engage_with_tweets:86 - Skipped spam tweet
+2025-09-16 18:01:37.347 | INFO     | src.engagement:engage_with_tweets:129 - Tweet engagement completed
+2025-09-16 18:01:37.361 | INFO     | src.engagement:promote_community:148 - Community promotion posted successfully
+2025-09-16 18:01:37.375 | INFO     | src.market_data:get_trending_coins:21 - Trending coins: ['bitcoin', 'ethereum', 'cardano']
+2025-09-16 18:01:37.380 | ERROR    | src.market_data:get_trending_coins:24 - Error fetching trending coins: API Error
+2025-09-16 18:01:37.392 | INFO     | src.market_data:get_coin_price:37 - Price of bitcoin: 45000.5
+2025-09-16 18:01:37.402 | INFO     | src.market_data:get_coin_price:37 - Price of bitcoin: 45000.5
+2025-09-16 18:01:37.409 | ERROR    | src.market_data:get_coin_price:40 - Error fetching price for bitcoin: API Error
+2025-09-16 18:01:37.450 | INFO     | src.twitter_client:post_tweet:21 - Posted tweet: 1234567890
+2025-09-16 18:01:37.462 | ERROR    | src.twitter_client:post_tweet:24 - Error posting tweet: API Error
+2025-09-16 18:01:37.473 | INFO     | src.twitter_client:like_tweet:41 - Liked tweet: 1234567890
+2025-09-16 18:01:37.483 | INFO     | src.twitter_client:reply_to_tweet:32 - Replied to tweet 1234567890: 9876543210
+2025-09-16 18:04:55.753 | INFO     | src.engagement:post_market_update:37 - Market update posted successfully
+2025-09-16 18:04:55.766 | WARNING  | src.engagement:post_market_update:22 - Rate limit exceeded for market update
+2025-09-16 18:04:55.775 | WARNING  | src.engagement:post_market_update:67 - No trending coins available
+2025-09-16 18:04:55.780 | WARNING  | src.engagement:post_market_update:58 - Could not fetch price for trending coin
+2025-09-16 18:04:55.790 | INFO     | src.engagement:engage_with_tweets:77 - Starting tweet engagement
+2025-09-16 18:04:55.790 | INFO     | src.engagement:engage_with_tweets:109 - Successfully engaged with tweet
+2025-09-16 18:04:55.790 | INFO     | src.engagement:engage_with_tweets:128 - Tweet engagement completed
+2025-09-16 18:04:55.794 | INFO     | src.engagement:engage_with_tweets:77 - Starting tweet engagement
+2025-09-16 18:04:55.794 | INFO     | src.engagement:engage_with_tweets:85 - Skipped spam tweet
+2025-09-16 18:04:55.794 | INFO     | src.engagement:engage_with_tweets:128 - Tweet engagement completed
+2025-09-16 18:04:55.807 | INFO     | src.engagement:promote_community:148 - Community promotion posted successfully
+2025-09-16 18:04:55.818 | INFO     | src.market_data:get_trending_coins:21 - Trending coins: ['bitcoin', 'ethereum', 'cardano']
+2025-09-16 18:04:55.824 | ERROR    | src.market_data:get_trending_coins:24 - Error fetching trending coins: API Error
+2025-09-16 18:04:55.830 | INFO     | src.market_data:get_coin_price:37 - Price of bitcoin: 45000.5
+2025-09-16 18:04:55.840 | INFO     | src.market_data:get_coin_price:37 - Price of bitcoin: 45000.5
+2025-09-16 18:04:55.846 | ERROR    | src.market_data:get_coin_price:40 - Error fetching price for bitcoin: API Error
+2025-09-16 18:04:55.860 | INFO     | src.twitter_client:post_tweet:21 - Posted tweet: 1234567890
+2025-09-16 18:04:55.868 | ERROR    | src.twitter_client:post_tweet:24 - Error posting tweet: API Error
+2025-09-16 18:04:55.877 | INFO     | src.twitter_client:like_tweet:41 - Liked tweet: 1234567890
+2025-09-16 18:04:55.884 | INFO     | src.twitter_client:reply_to_tweet:32 - Replied to tweet 1234567890: 9876543210
+2025-09-16 18:15:48.232 | INFO     | src.engagement:post_market_update:37 - Market update posted successfully
+2025-09-16 18:15:48.243 | WARNING  | src.engagement:post_market_update:22 - Rate limit exceeded for market update
+2025-09-16 18:15:48.254 | WARNING  | src.engagement:post_market_update:67 - No trending coins available
+2025-09-16 18:15:48.263 | WARNING  | src.engagement:post_market_update:58 - Could not fetch price for trending coin
+2025-09-16 18:15:48.273 | INFO     | src.engagement:engage_with_tweets:76 - Starting tweet engagement
+2025-09-16 18:15:48.274 | INFO     | src.engagement:engage_with_tweets:108 - Successfully engaged with tweet
+2025-09-16 18:15:48.274 | INFO     | src.engagement:engage_with_tweets:127 - Tweet engagement completed
+2025-09-16 18:15:48.286 | INFO     | src.engagement:engage_with_tweets:76 - Starting tweet engagement
+2025-09-16 18:15:48.286 | INFO     | src.engagement:engage_with_tweets:84 - Skipped spam tweet
+2025-09-16 18:15:48.287 | INFO     | src.engagement:engage_with_tweets:127 - Tweet engagement completed
+2025-09-16 18:15:48.299 | INFO     | src.engagement:promote_community:148 - Community promotion posted successfully
+2025-09-16 18:15:48.311 | INFO     | src.market_data:get_trending_coins:22 - Trending coins: ['bitcoin', 'ethereum', 'cardano']
+2025-09-16 18:15:48.319 | ERROR    | src.market_data:get_trending_coins:25 - Error fetching trending coins: API Error
+2025-09-16 18:15:48.327 | INFO     | src.market_data:get_coin_price:38 - Price of bitcoin: 45000.5
+2025-09-16 18:15:48.337 | INFO     | src.market_data:get_coin_price:38 - Price of bitcoin: 45000.5
+2025-09-16 18:15:48.345 | ERROR    | src.market_data:get_coin_price:41 - Error fetching price for bitcoin: API Error
+2025-09-16 18:15:48.362 | INFO     | src.twitter_client:post_tweet:22 - Posted tweet: 1234567890
+2025-09-16 18:15:48.372 | ERROR    | src.twitter_client:post_tweet:25 - Error posting tweet: API Error
+2025-09-16 18:15:48.383 | INFO     | src.twitter_client:like_tweet:42 - Liked tweet: 1234567890
+2025-09-16 18:15:48.390 | INFO     | src.twitter_client:reply_to_tweet:33 - Replied to tweet 1234567890: 9876543210
+2025-09-16 18:18:53.054 | INFO     | src.engagement:post_market_update:37 - Market update posted successfully
+2025-09-16 18:18:53.068 | WARNING  | src.engagement:post_market_update:22 - Rate limit exceeded for market update
+2025-09-16 18:18:53.077 | WARNING  | src.engagement:post_market_update:67 - No trending coins available
+2025-09-16 18:18:53.090 | WARNING  | src.engagement:post_market_update:58 - Could not fetch price for trending coin
+2025-09-16 18:18:53.101 | INFO     | src.engagement:engage_with_tweets:76 - Starting tweet engagement
+2025-09-16 18:18:53.101 | INFO     | src.engagement:engage_with_tweets:108 - Successfully engaged with tweet
+2025-09-16 18:18:53.102 | INFO     | src.engagement:engage_with_tweets:127 - Tweet engagement completed
+2025-09-16 18:18:53.110 | INFO     | src.engagement:engage_with_tweets:76 - Starting tweet engagement
+2025-09-16 18:18:53.110 | INFO     | src.engagement:engage_with_tweets:84 - Skipped spam tweet
+2025-09-16 18:18:53.111 | INFO     | src.engagement:engage_with_tweets:127 - Tweet engagement completed
+2025-09-16 18:18:53.120 | INFO     | src.engagement:promote_community:148 - Community promotion posted successfully
+2025-09-16 18:18:53.133 | INFO     | src.market_data:get_trending_coins:22 - Trending coins: ['bitcoin', 'ethereum', 'cardano']
+2025-09-16 18:18:53.139 | ERROR    | src.market_data:get_trending_coins:25 - Error fetching trending coins: API Error
+2025-09-16 18:18:53.147 | INFO     | src.market_data:get_coin_price:38 - Price of bitcoin: 45000.5
+2025-09-16 18:18:53.157 | INFO     | src.market_data:get_coin_price:38 - Price of bitcoin: 45000.5
+2025-09-16 18:18:53.165 | ERROR    | src.market_data:get_coin_price:41 - Error fetching price for bitcoin: API Error
+2025-09-16 18:18:53.180 | INFO     | src.twitter_client:post_tweet:22 - Posted tweet: 1234567890
+2025-09-16 18:18:53.189 | ERROR    | src.twitter_client:post_tweet:25 - Error posting tweet: API Error
+2025-09-16 18:18:53.199 | INFO     | src.twitter_client:like_tweet:42 - Liked tweet: 1234567890
+2025-09-16 18:18:53.222 | INFO     | src.twitter_client:reply_to_tweet:33 - Replied to tweet 1234567890: 9876543210
+2025-09-16 18:20:21.854 | INFO     | src.engagement:post_market_update:40 - Market update posted successfully
+2025-09-16 18:20:21.867 | WARNING  | src.engagement:post_market_update:22 - Rate limit exceeded for market update
+2025-09-16 18:20:21.878 | WARNING  | src.engagement:post_market_update:70 - No trending coins available
+2025-09-16 18:20:21.889 | WARNING  | src.engagement:post_market_update:61 - Could not fetch price for trending coin
+2025-09-16 18:20:21.900 | INFO     | src.engagement:engage_with_tweets:79 - Starting tweet engagement
+2025-09-16 18:20:21.901 | INFO     | src.engagement:engage_with_tweets:111 - Successfully engaged with tweet
+2025-09-16 18:20:21.902 | INFO     | src.engagement:engage_with_tweets:130 - Tweet engagement completed
+2025-09-16 18:20:21.912 | INFO     | src.engagement:engage_with_tweets:79 - Starting tweet engagement
+2025-09-16 18:20:21.912 | INFO     | src.engagement:engage_with_tweets:87 - Skipped spam tweet
+2025-09-16 18:20:21.913 | INFO     | src.engagement:engage_with_tweets:130 - Tweet engagement completed
+2025-09-16 18:20:21.926 | INFO     | src.engagement:promote_community:151 - Community promotion posted successfully
+2025-09-16 18:20:21.940 | INFO     | src.market_data:get_trending_coins:22 - Trending coins: ['bitcoin', 'ethereum', 'cardano']
+2025-09-16 18:20:21.945 | ERROR    | src.market_data:get_trending_coins:25 - Error fetching trending coins: API Error
+2025-09-16 18:20:21.952 | INFO     | src.market_data:get_coin_price:38 - Price of bitcoin: 45000.5
+2025-09-16 18:20:21.962 | INFO     | src.market_data:get_coin_price:38 - Price of bitcoin: 45000.5
+2025-09-16 18:20:21.969 | ERROR    | src.market_data:get_coin_price:41 - Error fetching price for bitcoin: API Error
+2025-09-16 18:20:21.982 | INFO     | src.twitter_client:post_tweet:22 - Posted tweet: 1234567890
+2025-09-16 18:20:21.991 | ERROR    | src.twitter_client:post_tweet:25 - Error posting tweet: API Error
+2025-09-16 18:20:21.997 | INFO     | src.twitter_client:like_tweet:42 - Liked tweet: 1234567890
+2025-09-16 18:20:22.006 | INFO     | src.twitter_client:reply_to_tweet:33 - Replied to tweet 1234567890: 9876543210
+2025-09-16 18:22:56.184 | INFO     | src.engagement:post_market_update:40 - Market update posted successfully
+2025-09-16 18:22:56.189 | WARNING  | src.engagement:post_market_update:22 - Rate limit exceeded for market update
+2025-09-16 18:22:56.202 | WARNING  | src.engagement:post_market_update:70 - No trending coins available
+2025-09-16 18:22:56.204 | WARNING  | src.engagement:post_market_update:61 - Could not fetch price for trending coin
+2025-09-16 18:22:56.219 | INFO     | src.engagement:engage_with_tweets:79 - Starting tweet engagement
+2025-09-16 18:22:56.219 | INFO     | src.engagement:engage_with_tweets:111 - Successfully engaged with tweet
+2025-09-16 18:22:56.220 | INFO     | src.engagement:engage_with_tweets:130 - Tweet engagement completed
+2025-09-16 18:22:56.225 | INFO     | src.engagement:engage_with_tweets:79 - Starting tweet engagement
+2025-09-16 18:22:56.225 | INFO     | src.engagement:engage_with_tweets:87 - Skipped spam tweet
+2025-09-16 18:22:56.225 | INFO     | src.engagement:engage_with_tweets:130 - Tweet engagement completed
+2025-09-16 18:22:56.237 | INFO     | src.engagement:promote_community:151 - Community promotion posted successfully
+2025-09-16 18:22:56.249 | INFO     | src.market_data:get_trending_coins:22 - Trending coins: ['bitcoin', 'ethereum', 'cardano']
+2025-09-16 18:22:56.252 | ERROR    | src.market_data:get_trending_coins:25 - Error fetching trending coins: API Error
+2025-09-16 18:22:56.258 | INFO     | src.market_data:get_coin_price:38 - Price of bitcoin: 45000.5
+2025-09-16 18:22:56.268 | INFO     | src.market_data:get_coin_price:38 - Price of bitcoin: 45000.5
+2025-09-16 18:22:56.272 | ERROR    | src.market_data:get_coin_price:41 - Error fetching price for bitcoin: API Error
+2025-09-16 18:22:56.285 | INFO     | src.twitter_client:post_tweet:22 - Posted tweet: 1234567890
+2025-09-16 18:22:56.293 | ERROR    | src.twitter_client:post_tweet:25 - Error posting tweet: API Error
+2025-09-16 18:22:56.303 | INFO     | src.twitter_client:like_tweet:42 - Liked tweet: 1234567890
+2025-09-16 18:22:56.306 | INFO     | src.twitter_client:reply_to_tweet:33 - Replied to tweet 1234567890: 9876543210

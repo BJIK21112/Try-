@@ -1,0 +1,11 @@
+# Development dependencies for testing and code quality
+black==23.11.0
+flake8==6.1.0
+isort==5.12.0
+mypy==1.7.1
+pre-commit==3.5.0
+bandit==1.7.5  # Security linting
+safety==3.0.1   # Vulnerability scanning
+pytest==8.3.4
+pytest-cov==4.1.0
+pytest-mock==3.12.0

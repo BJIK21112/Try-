@@ -1,0 +1,29 @@
+name: Deploy to Cloud Run
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+
+      - run: gcloud auth configure-docker
+
+      - run: |
+          gcloud builds submit --tag gcr.io/sublime-lodge-472322-m2/x-bot:latest .
+          gcloud run deploy x-bot \
+            --image gcr.io/sublime-lodge-472322-m2/x-bot:latest \
+            --platform managed \
+            --region us-central1 \
+            --allow-unauthenticated \
+            --set-env-vars "GOOGLE_CLOUD_PROJECT=sublime-lodge-472322-m2" \
+            --memory 1Gi \
+            --cpu 1 \
+            --min-instances 1 \
+            --max-instances 3
