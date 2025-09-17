@@ -1,0 +1,2 @@
+startup-probe: httpGet:{path:"/health"}
+liveness-probe: httpGet:{path:"/health"}
