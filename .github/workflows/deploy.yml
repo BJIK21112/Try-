@@ -26,6 +26,7 @@ jobs:
             --region us-central1 \
             --allow-unauthenticated \
             --set-env-vars "GOOGLE_CLOUD_PROJECT=sublime-lodge-472322-m2" \
+            --liveness-probe-http-get-path=/health \
             --memory 1Gi \
             --cpu 1 \
             --min-instances 1 \
