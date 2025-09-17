@@ -13,7 +13,12 @@ class Scheduler:
     def start(self) -> None:
         self.scheduler.add_job(self.bot.post_market_update, "interval", minutes=30)
         self.scheduler.add_job(self.bot.engage_with_tweets, "interval", minutes=15)
-        self.scheduler.add_job(self.bot.promote_community, "interval", minutes=60)
+        self.scheduler.add_job(
+            self.bot.promote_community, "interval", minutes=45
+        )  # More frequent general promotion
+        self.scheduler.add_job(
+            self.bot.promote_specific_post, "interval", minutes=25
+        )  # Specific post promotion
         self.scheduler.start()
         logger.info("Scheduler started")
 

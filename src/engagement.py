@@ -141,10 +141,21 @@ class EngagementBot:
                 extra={"action": "promote_community", "rate_limited": True},
             )
             return
-        text = (
-            "Join the heavenly $wifDOG community for a celestial crypto journey! 🌟 "
-            "https://x.com/i/communities/1968070058237890732 #wifDOG #crypto #memecoin"
-        )
+
+        # Enhanced $wifDOG promotion messages with trending elements
+        promotion_messages = [
+            "🚀 $wifDOG is taking over! Join the heavenly revolution in crypto! 🌟 https://x.com/i/communities/1968070058237890732 #wifDOG #memecoin #crypto #Solana",
+            "🐕 Divine $wifDOG community growing fast! Don't miss this celestial opportunity! ⭐ https://x.com/i/communities/1968070058237890732 #wifDOG #altcoins #trading",
+            "🌙 $wifDOG: Where dogs meet divinity in the crypto space! Join now! 🐕‍🦺 https://x.com/i/communities/1968070058237890732 #wifDOG #DeFi #NFT",
+            "🔥 $wifDOG trending! Heavenly gains await in this dog-themed revolution! 🌟 https://x.com/i/communities/1968070058237890732 #wifDOG #crypto #blockchain",
+            "✨ Discover $wifDOG - the ultimate crypto companion for your portfolio! 🐕 https://x.com/i/communities/1968070058237890732 #wifDOG #investing #memecoins",
+        ]
+
+        # Rotate through different messages
+        import random
+
+        text = random.choice(promotion_messages)
+
         tweet_id = self.twitter.post_tweet(text)
         if tweet_id:
             posts_counter.inc()
@@ -163,3 +174,69 @@ class EngagementBot:
                 extra={"action": "promote_community", "success": False},
             )
         bot_status.last_promotion = datetime.now()
+
+    def promote_specific_post(self) -> None:
+        """Promote the specific $wifDOG post with groundbreaking SEO and trending elements"""
+        if not self.rate_limiter.can_request():
+            logger.warning(
+                "Rate limit exceeded for specific post promotion",
+                extra={"action": "promote_specific_post", "rate_limited": True},
+            )
+            return
+
+        target_tweet_id = "1968073148789821487"  # The specific post to promote
+
+        # Enhanced promotion messages for the specific post
+        promotion_messages = [
+            "🚀 This $wifDOG breakdown is pure gold! Essential reading for crypto enthusiasts! 📈 https://x.com/AadityaDhu71908/status/1968073148789821487 #wifDOG #crypto #memecoin #Solana #trading",
+            "🔥 Mind-blowing $wifDOG analysis! This post explains everything you need to know! 🌟 https://x.com/AadityaDhu71908/status/1968073148789821487 #wifDOG #blockchain #DeFi #NFT #investing",
+            "💎 $wifDOG community favorite! This thread is a game-changer for the space! 🐕 https://x.com/AadityaDhu71908/status/1968073148789821487 #wifDOG #altcoins #cryptocurrency #memecoins",
+            "⚡ Revolutionary $wifDOG insights! Don't sleep on this comprehensive breakdown! 🌙 https://x.com/AadityaDhu71908/status/1968073148789821487 #wifDOG #cryptoanalysis #trading #blockchain",
+            "🌟 $wifDOG phenomenon explained! This post captures the essence perfectly! ✨ https://x.com/AadityaDhu71908/status/1968073148789821487 #wifDOG #memecoin #Solana #cryptocommunity",
+        ]
+
+        import random
+
+        promotion_text = random.choice(promotion_messages)
+
+        # Try to reply to the specific post
+        reply_id = self.twitter.reply_to_tweet(target_tweet_id, promotion_text)
+        if reply_id:
+            replies_counter.inc()
+            engagements_counter.inc()
+            logger.info(
+                "Specific post promotion successful",
+                extra={
+                    "action": "promote_specific_post",
+                    "target_tweet_id": target_tweet_id,
+                    "reply_id": reply_id,
+                    "success": True,
+                },
+            )
+        else:
+            # If reply fails, try posting a standalone promotion
+            standalone_text = "🔥 Must-read $wifDOG analysis! Complete breakdown here: https://x.com/AadityaDhu71908/status/1968073148789821487 #wifDOG #crypto #memecoin #Solana"
+            tweet_id = self.twitter.post_tweet(standalone_text)
+            if tweet_id:
+                posts_counter.inc()
+                engagements_counter.inc()
+                logger.info(
+                    "Specific post promotion (standalone) successful",
+                    extra={
+                        "action": "promote_specific_post",
+                        "target_tweet_id": target_tweet_id,
+                        "tweet_id": tweet_id,
+                        "success": True,
+                    },
+                )
+            else:
+                logger.error(
+                    "Failed to promote specific post",
+                    extra={
+                        "action": "promote_specific_post",
+                        "target_tweet_id": target_tweet_id,
+                        "success": False,
+                    },
+                )
+
+        bot_status.last_specific_promotion = datetime.now()
