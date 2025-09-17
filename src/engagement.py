@@ -75,7 +75,7 @@ class EngagementBot:
 
     def engage_with_tweets(
         self,
-        query: str = 'wifDOG OR solwifDOG OR $wifDOG OR memecoin OR crypto OR kukur OR tihar OR "dog festival" OR nepal',
+        query: str = 'wifDOG OR solwifDOG OR wifDOG OR memecoin OR crypto OR kukur OR tihar OR "dog festival" OR nepal',
     ) -> None:
         logger.info(
             "Starting tweet engagement",
