@@ -74,7 +74,8 @@ class EngagementBot:
         bot_status.last_market_update = datetime.now()
 
     def engage_with_tweets(
-        self, query: str = "wifDOG OR solwifDOG OR $wifDOG OR memecoin OR crypto"
+        self,
+        query: str = 'wifDOG OR solwifDOG OR $wifDOG OR memecoin OR crypto OR kukur OR tihar OR "dog festival" OR nepal',
     ) -> None:
         logger.info(
             "Starting tweet engagement",
@@ -103,7 +104,7 @@ class EngagementBot:
             self.twitter.like_tweet(tweet.id)
             likes_counter.inc()
             engagements_counter.inc()
-            reply_text = "Interesting! Keep up the good work. #crypto"
+            reply_text = "Fascinating cultural insight! Dogs hold a special place in many cultures. 🐕 #KukurTihar #CulturalHeritage"
             tweet_id = self.twitter.reply_to_tweet(tweet.id, reply_text)
             if tweet_id:
                 replies_counter.inc()
