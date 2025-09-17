@@ -25,7 +25,6 @@ jobs:
             --platform managed \
             --region us-central1 \
             --allow-unauthenticated \
-            --clear-env-vars \
             --set-env-vars "GOOGLE_CLOUD_PROJECT=sublime-lodge-472322-m2" \
             --memory 1Gi \
             --cpu 1 \
