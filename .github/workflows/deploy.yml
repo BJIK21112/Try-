@@ -18,7 +18,8 @@ jobs:
       - run: gcloud auth configure-docker
 
       - run: |
-          gcloud builds submit --service-account x-bot-secret-accessor@sublime-lodge-472322-m2.iam.gserviceaccount.com --tag gcr.io/sublime-lodge-472322-m2/x-bot:latest .
+          docker build -t gcr.io/sublime-lodge-472322-m2/x-bot:latest .
+          docker push gcr.io/sublime-lodge-472322-m2/x-bot:latest
           gcloud run deploy x-bot \
             --image gcr.io/sublime-lodge-472322-m2/x-bot:latest \
             --platform managed \
